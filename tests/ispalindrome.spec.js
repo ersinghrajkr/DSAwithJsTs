@@ -2,44 +2,49 @@ import assert from 'assert';
 import should from 'should';
 import { isPalindrome } from '../palindrome/palindrome.js'
 
-describe('Palindrome ', function() {
-    it('Is String Palindrome - EYE', function(){
+describe('Palindrome ', function () {
+    it('A is a palindrome', function () {
+        const result = isPalindrome("A")
+        assert.equal(true, result, 'A is a palindrome')
+    })
+
+    it('Empty string is a palindrome', function () {
+        const result = isPalindrome("")
+        assert.equal(true, result, 'Empty string is a palindrome')
+    })
+
+    it('EYE is a palindrome', function () {
         const result = isPalindrome("EYE")
-        assert.equal(true, result)
+        assert.equal(true, result, 'EYE is a palindrome')
     })
 
-    it('Is String Palindrome - HELLO', function(){
+    it('HELLO is not a palindrome', function () {
         const result = isPalindrome("HELLO")
-        should.notDeepEqual(true, result);
+        should.notDeepEqual(true, result, 'HELLO is not a palindrome');
     })
 
-    it('Is Number Palindrome 12321', function(){
+    it('12321 is a palindrome1', function () {
         const result = isPalindrome(12321);
-        // console.log("Is Number 12321 Palindrome-", result);
-        should.deepEqual(true, result);
+        should.deepEqual(true, result, '12321 is a palindrome');
     })
 
-    it('Is Number Palindrome 123', function(){
+    it('123 is not a palindrome', function () {
         const result = isPalindrome(123)
-        // console.log("Is Number 123 Palindrome-", result);
-        should.deepEqual(false, result);
+        should.deepEqual(false, result, '123 is not a palindrome');
     })
 
-    it('Is Number Palindrome -121', function(){
+    it('-121 is a palindrome', function () {
         const result = isPalindrome(-121)
-        // console.log("Is Number 123 Palindrome-", result);
-        should.deepEqual(true, result);
+        should.deepEqual(true, result, '-121 is a palindrome');
     })
 
-    it('Is Number Palindrome -1100', function(){
+    it('-1100 is not a palindrome0', function () {
         const result = isPalindrome(-1100)
-        // console.log("Is Number 123 Palindrome-", result);
-        should.deepEqual(false, result);
+        should.deepEqual(false, result, '-1100 is not a palindrome');
     })
 
-    it('Is Number Palindrome 000', function(){
+    it('0 is a palindrome', function () {
         const result = isPalindrome(0)
-        // console.log("Is Number 123 Palindrome-", result);
-        should.deepEqual(true, result);
+        should.deepEqual(true, result, '0 is a palindrome');
     })
 })
