@@ -303,7 +303,8 @@ var raj = new Person('Raj', 25);
 //window Binding - applicable for browser
 var sayName = function() {
     console.log(this.name);
-}var me = {
+}
+var me = {
     name: "Raj"
 }
 //If there is no reference before dot(along with dot for example someThis.FuncName()).Then by default sayName()-> "this" will point to window object.
@@ -311,8 +312,5 @@ var sayName = function() {
 this.name = "Ranjay";
 sayName();
 ```
-
-
-
 
 ### The Evolution of Async JavaScript - From Callbacks, to Promises, to Async/Await

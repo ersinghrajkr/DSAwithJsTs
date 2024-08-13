@@ -14,6 +14,8 @@ var Person = function(name, age) {
 };
 // "this" keyword will be bound to the new object which is constructed
 var raj = new Person('Raj', 25);
+console.log(raj);
+console.log(typeof raj);
 
 
 
