@@ -43,7 +43,7 @@ interview3();
 
 //Output
 /**
- * With Global Scope variable- Shadowing in JS is used here:  6
+With Global Scope variable- Shadowing in JS is used here:  6
 With Global Scope variable- Shadowing in JS is used here:  6
 With Global Scope variable- Shadowing in JS is used here:  6
 With Global Scope variable- Shadowing in JS is used here:  6
